@@ -1,12 +1,15 @@
-import java.util.ArrayList;
+import java.util.HashSet;
 public class ObservableImpl2 implements IObservable {
-   ArrayList<IObserver> observers=new ArrayList<IObserver>();;
+    HashSet<IObserver> observers=new HashSet<IObserver>();
+    @Override
     public void register(IObserver o){
      observers.add(o);
     }
+        @Override
         public void unregister(IObserver o){
             observers.remove(o);
     }
+        @Override
         public void notifyObservers(){
         for(IObserver o:observers)
         {
