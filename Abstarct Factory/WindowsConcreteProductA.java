@@ -1,0 +1,3 @@
+class WindowsConcreteProductA implements ProductA{
+    
+}

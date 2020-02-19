@@ -1,0 +1,3 @@
+class LinuxConcreteProductA implements ProductA{
+    
+}
